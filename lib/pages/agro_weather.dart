@@ -25,3 +25,14 @@ class AgroWeather extends StatelessWidget {
                 ),
               ),
             ),
+            image: AssetImage('images/weather-banner.jpg'),
+            colorFilter: ColorFilter.mode(
+              Colors.black.withOpacity(0.3),
+              BlendMode.darken,
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+}
