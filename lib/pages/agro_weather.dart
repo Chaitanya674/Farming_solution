@@ -21,3 +21,7 @@ class AgroWeather extends StatelessWidget {
                 style: TextStyle(
                   color: GFColors.LIGHT,
                   fontSize: 50,
+                  fontWeight: FontWeight.bold,
+                ),
+              ),
+            ),
