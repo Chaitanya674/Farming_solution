@@ -10,3 +10,14 @@ class AgroWeather extends StatelessWidget {
       appBar: AppBar(
         title: const Text('Agricultural Weather'),
       ),
+      body: ListView(
+        children: [
+          GFImageOverlay(
+            height: 400,
+            width: 300,
+            child: Center(
+              child: Text(
+                'Agricultural Weather',
+                style: TextStyle(
+                  color: GFColors.LIGHT,
+                  fontSize: 50,
