@@ -12,4 +12,12 @@ class DetectPage extends StatefulWidget {
 
 class _DetectPageState extends State<DetectPage> {
   File? _image;
-}
+
+  Future<void> _getImage() async {
+    final pickedFile = await ImagePicker().getImage(source: ImageSource.gallery);
+    if (pickedFile != null) {
+      setState(() {
+        _image = File(pickedFile.path);
+      });
+    }
+  }
