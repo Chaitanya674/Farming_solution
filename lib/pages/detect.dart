@@ -44,3 +44,36 @@ class _DetectPageState extends State<DetectPage> {
 
     await Tflite.close();
   }
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      title: 'Disease Detection',
+      theme: ThemeData(
+        primarySwatch: Colors.green,
+      ),
+      home: Scaffold(
+        appBar: AppBar(
+          title: Text('Disease Detection'),
+        ),
+        body: Center(
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              ElevatedButton(
+                onPressed: _getImage,
+                child: Text('Choose Image'),
+              ),
+              SizedBox(height: 16),
+              if (_image != null) Image.file(_image!),
+            ],
+          ),
+        ),
+        floatingActionButton: FloatingActionButton(
+          onPressed: _classifyImage,
+          child: Icon(Icons.check),
+        ),
+      ),
+    );
+  }
+}
