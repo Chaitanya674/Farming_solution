@@ -31,3 +31,16 @@ class _DetectPageState extends State<DetectPage> {
       model: 'assets/model.tflite',
       labels: 'assets/labels.txt',
     );
+
+    final List<dynamic>? results = await Tflite.runModelOnImage(
+      path: _image!.path,
+      numResults: 5,
+      threshold: 0.5,
+      imageMean: 0.0,
+      imageStd: 255.0,
+    );
+
+    print(results);
+
+    await Tflite.close();
+  }
