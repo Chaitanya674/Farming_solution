@@ -21,3 +21,13 @@ class _DetectPageState extends State<DetectPage> {
       });
     }
   }
+
+  Future<void> _classifyImage() async {
+    if (_image == null) {
+      return;
+    }
+
+    await Tflite.loadModel(
+      model: 'assets/model.tflite',
+      labels: 'assets/labels.txt',
+    );
