@@ -9,3 +9,7 @@ class DetectPage extends StatefulWidget {
   @override
   _DetectPageState createState() => _DetectPageState();
 }
+
+class _DetectPageState extends State<DetectPage> {
+  File? _image;
+}
