@@ -144,4 +144,39 @@ class SeedsSowing extends StatelessWidget {
                 "Transplanting is the practice of planting seedlings in the main field after pulling them out from the nursery.",
             title: "6. TRANSPLANTING",
           ),
-
+          Padding(
+            padding: const EdgeInsets.all(15.0),
+            child: Text(
+              "Why is a nursery raised?\n1. It is done to reduce the main field duration of the crops, thus allowing multiple crops per year.\n2. Extra care can be provided for specific seedlings.\n3. It is done for small-seeded crops like rice, which requires shallow sowing and frequent irrigation for proper germination.",
+              style: TextStyle(fontSize: 20),
+            ),
+          ),
+          Padding(
+            padding: EdgeInsets.all(10),
+            child: Row(
+              crossAxisAlignment: CrossAxisAlignment.center,
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Image(
+                  image: AssetImage('images/Sabka-sath-sabka-vikas.jpg'),
+                  fit: BoxFit.fill,
+                ),
+              ],
+            ),
+          ),
+        ],
+      ),
+      persistentFooterButtons: [
+        Row(
+          mainAxisAlignment: MainAxisAlignment.center,
+          crossAxisAlignment: CrossAxisAlignment.center,
+          children: [
+            Container(
+              height: 25,
+            ),
+          ],
+        ),
+      ],
+    );
+  }
+}
