@@ -20,3 +20,11 @@ class SeedsSowing extends StatelessWidget {
             child: Center(
               child: Text(
                 'Seed Sowing',
+                style: TextStyle(
+                  color: GFColors.LIGHT,
+                  fontSize: 50,
+                  fontWeight: FontWeight.bold,
+                ),
+              ),
+            ),
+            
