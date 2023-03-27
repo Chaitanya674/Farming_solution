@@ -27,4 +27,30 @@ class SeedsSowing extends StatelessWidget {
                 ),
               ),
             ),
-            
+            image: AssetImage('images/seed_sowing/seeds-banner.jpg'),
+            colorFilter: new ColorFilter.mode(
+              Colors.black.withOpacity(0.3),
+              BlendMode.darken,
+            ),
+          ),
+          Padding(
+            padding: const EdgeInsets.all(10.0),
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              crossAxisAlignment: CrossAxisAlignment.center,
+              children: [
+                Text(
+                  "Seed Sowing",
+                  style: TextStyle(
+                    color: Colors.grey.shade700,
+                    fontSize: 30,
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
+              ],
+            ),
+          ),
+          Padding(
+            padding: const EdgeInsets.all(15.0),
+            child: Text(
+              "Sowing (or seed sowing) is defined as the process of placing the seed in soil to germinate and grow into a plant. In comparison, planting is the putting of plant propagules in soil for growing plants. Propagules can be seedlings, roots, tubers, leaves, or cuttings. Transplanting is a term used for planting seedlings grown in nurseries into different fields, pots, or plots for different purposes.",
