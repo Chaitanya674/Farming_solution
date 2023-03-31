@@ -165,3 +165,33 @@ class SoilAndFertility extends StatelessWidget {
               ],
             ),
           ),
+          // Footer Image
+          Padding(
+            padding: EdgeInsets.all(10),
+            child: Row(
+              crossAxisAlignment: CrossAxisAlignment.center,
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Image(
+                  image: AssetImage('images/Sabka-sath-sabka-vikas.jpg'),
+                  fit: BoxFit.fill,
+                ),
+              ],
+            ),
+          ),
+        ],
+      ),
+      persistentFooterButtons: [
+        Row(
+          mainAxisAlignment: MainAxisAlignment.center,
+          crossAxisAlignment: CrossAxisAlignment.center,
+          children: [
+            Container(
+              height: 25,
+            ),
+          ],
+        ),
+      ],
+    );
+  }
+}
