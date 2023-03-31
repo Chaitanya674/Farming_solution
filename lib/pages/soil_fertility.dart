@@ -14,3 +14,14 @@ class SoilAndFertility extends StatelessWidget {
         children: [
           GFImageOverlay(
             height: 400,
+            width: 300,
+            child: Center(
+              child: Text(
+                'Agriculture Nutrient Management and Fertilizer',
+                style: TextStyle(
+                  color: GFColors.LIGHT,
+                  fontSize: 50,
+                  fontWeight: FontWeight.bold,
+                ),
+              ),
+            ),
