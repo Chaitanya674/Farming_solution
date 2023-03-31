@@ -49,3 +49,11 @@ class SoilAndFertility extends StatelessWidget {
               ],
             ),
           ),
+          Padding(
+            padding: const EdgeInsets.only(left: 100, right: 100, top: 20),
+            child: Text(
+              "Most fertilizers that are commonly used in agriculture contain the three basic plant nutrients: nitrogen, phosphorus, and potassium. Some fertilizers also contain certain micronutrients, such as zinc and other metals, that are necessary for plant growth. Materials that are applied to the land primarily to enhance soil characteristics (rather than as plant food) are commonly referred to as soil amendments.\nFertilizers and soil amendments can be derived from:\n 1. virgin raw material\n2. composts and other organic matter\n 3. wastes, such as sewage sludge and certain industrial wastes.\nOveruse of fertilizers has resulted in contamination of surface water and groundwater.",
+              style: TextStyle(fontSize: 20),
+            ),
+          ),
+          // Manure as fertilizer
