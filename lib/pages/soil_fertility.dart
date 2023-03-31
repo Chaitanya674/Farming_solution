@@ -57,3 +57,111 @@ class SoilAndFertility extends StatelessWidget {
             ),
           ),
           // Manure as fertilizer
+          Padding(
+            padding: const EdgeInsets.all(10.0),
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              crossAxisAlignment: CrossAxisAlignment.center,
+              children: [
+                Text(
+                  "Manure as Fertilizer",
+                  style: TextStyle(
+                    color: Colors.grey.shade700,
+                    fontSize: 30,
+                    fontWeight: FontWeight.bold,
+                  ),
+                )
+              ],
+            ),
+          ),
+          Padding(
+            padding: const EdgeInsets.only(left: 100, right: 100, top: 20),
+            child: Text(
+              "Agricultural producers can return manure and crop residues to the soil as fertilizers or soil conditioners on their own property unless prohibited by other State or local laws.",
+              style: TextStyle(fontSize: 20),
+            ),
+          ),
+          // Image for Manure as fertilizer
+          Row(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Container(
+                child: Image.asset(
+                  "images/fertilizer/manure.jpg",
+                  height: 450,
+                  width: 450,
+                ),
+              ),
+            ],
+          ),
+          // Nutrient pollution
+          Padding(
+            padding: const EdgeInsets.all(10.0),
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              crossAxisAlignment: CrossAxisAlignment.center,
+              children: [
+                Text(
+                  "Nutrient Pollution",
+                  style: TextStyle(
+                    color: Colors.grey.shade700,
+                    fontSize: 30,
+                    fontWeight: FontWeight.bold,
+                  ),
+                )
+              ],
+            ),
+          ),
+          Padding(
+            padding: const EdgeInsets.only(left: 100, right: 100, top: 20),
+            child: Text(
+              "Sources and Solutions: Agriculture - Animal manure, excess fertilizer applied to crops and fields, and soil erosion make agriculture one of the largest sources of nitrogen and phosphorus pollution in the country.\n\nEstimated Animal Agriculture Nitrogen and Phosphorus from Manure - Animal agriculture manure is a primary source of nitrogen and phosphorus to surface and groundwater. Manure runoff from cropland and pastures or discharging animal feeding operations and concentrated animal feeding operations (CAFOs) often reaches surface and groundwater systems through surface runoff or infiltration.",
+              style: TextStyle(fontSize: 20),
+            ),
+          ),
+          // Image for Nutrient Pollution
+          Row(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Container(
+                child: Image.asset("images/fertilizer/pollution.jpg"),
+              ),
+            ],
+          ),
+          // Commercial fertilizer
+          Padding(
+            padding: const EdgeInsets.all(10.0),
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              crossAxisAlignment: CrossAxisAlignment.center,
+              children: [
+                Text(
+                  "Commercial Fertilizer",
+                  style: TextStyle(
+                    color: Colors.grey.shade700,
+                    fontSize: 30,
+                    fontWeight: FontWeight.bold,
+                  ),
+                )
+              ],
+            ),
+          ),
+          Padding(
+            padding: const EdgeInsets.only(left: 100, right: 100, top: 20),
+            child: Text(
+              "Commercial Fertilizer Purchased - Fertilizer is a primary source of nitrogen and phosphorus. It often reaches surface and groundwater systems through farm or urban/suburban runoff or infiltration.  Fertilizer use and run-off can be significantly reduced by appropriate fertilizer application through:\n implementing best management practices\n  employing precision agriculture methods.",
+              style: TextStyle(fontSize: 20),
+            ),
+          ),
+          // Image for Commercial fertilizer
+          Padding(
+            padding: const EdgeInsets.all(15.0),
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Container(
+                  child: Image.asset("images/fertilizer/fertilizer.jpg"),
+                ),
+              ],
+            ),
+          ),
