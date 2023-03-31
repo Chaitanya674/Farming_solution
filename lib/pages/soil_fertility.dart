@@ -25,3 +25,9 @@ class SoilAndFertility extends StatelessWidget {
                 ),
               ),
             ),
+            image: AssetImage('images/soil-banner.jpg'),
+            colorFilter: new ColorFilter.mode(
+              Colors.black.withOpacity(0.3),
+              BlendMode.darken,
+            ),
+          ),
