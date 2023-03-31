@@ -31,3 +31,21 @@ class SoilAndFertility extends StatelessWidget {
               BlendMode.darken,
             ),
           ),
+          // Introduction
+          Padding(
+            padding: const EdgeInsets.all(10.0),
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              crossAxisAlignment: CrossAxisAlignment.center,
+              children: [
+                Text(
+                  "Agriculture Nutrient Management and Fertilizer",
+                  style: TextStyle(
+                    color: Colors.grey.shade700,
+                    fontSize: 30,
+                    fontWeight: FontWeight.bold,
+                  ),
+                )
+              ],
+            ),
+          ),
