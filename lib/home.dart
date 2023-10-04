@@ -6,8 +6,10 @@ import 'package:flutter_tts/flutter_tts.dart';
 class HomePage extends StatelessWidget {
   const HomePage({Key? key}) : super(key: key);
 
+  // Initialize FlutterTts only once for efficiency
   final FlutterTts flutterTts = FlutterTts();
 
+  // Helper function to create RightRow widgets with reduced repetition
   Widget buildRightRow({
     required String imageSrc,
     required String content,
@@ -37,6 +39,8 @@ class HomePage extends StatelessWidget {
           SizedBox(height: 20),
           ImageSlider(),
           SizedBox(height: 20),
+
+          // Use the buildRightRow function to create RightRow widgets
           buildRightRow(
             imageSrc: 'images/advicer.jpg',
             content:
@@ -101,9 +105,9 @@ class HomePage extends StatelessWidget {
           children: [
             Container(
               height: 25,
-            )
+            ),
           ],
-        )
+        ),
       ],
     );
   }
