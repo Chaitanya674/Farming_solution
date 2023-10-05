@@ -283,18 +283,6 @@ class Info_page_2 extends StatelessWidget {
               ],
             ),
           ),
-          Padding(
-            padding: const EdgeInsets.all(40.0),
-            child: Text("The eligible farmers may apply with the village Patwaris, revenue officials or other designated officers / agencies and submit their required details to them.\n\nFarmers can also visit their nearest Common Service Centres (CSCs) for registration in the Scheme upon payment of fees.\n\nFarmers can also do their self-registration through the Farmers Corner in the PM KISAN portal. To check the status of the registration, click here.\n\nDetails required for registration include  Name, Age, Gender, Category(SC/ST), Aadhaar Number (in case Aadhaar Number has not been issued then Aadhaar Enrollment Number together with any other prescribed documents for purposes of the identification such as Driving Licence, Voters’ ID Card, NREGA Job Card, or any other identification documents issued by Central/State/UT Governments or their authorities,etc.), Bank Account Number and the Mobile Number of the beneficiaries." ,style: TextStyle(fontSize: 20),),
-          ),
-          Padding(
-            padding: EdgeInsets.all(10),
-            child: Row(
-              crossAxisAlignment: CrossAxisAlignment.center,
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                Image(image:new AssetImage('images/Sabka-sath-sabka-vikas.jpg'),fit: BoxFit.fill,)]),
-          ),
         ],
       ),
       persistentFooterButtons: [
